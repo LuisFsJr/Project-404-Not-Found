@@ -23,4 +23,4 @@ Challenge: Create a 404 not found page following the design. The page should be 
 
 <h1 align="center">Deploy do Projeto</h1>
 
-> Link do deploy da aplicação: https://luisfsjr.github.io/Grab-Login/
+> Link do deploy da aplicação: https://luisfsjr.github.io/Project-404-Not-Found/
