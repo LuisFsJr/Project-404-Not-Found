@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inconsolata;
+}
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+}
+/* ----- // CSS // ----- */
+
+header h2{
+    padding: 20px 40px;
+    font-size: 24px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+main .folder{
+    position: relative;
+    width: 50%;
+    height: calc(100vh - 106px);
+    padding:0 2% ;
+}
+
+main .folder img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 80%;
+}
+
+main .info{
+    position: relative;
+    width: 50%;
+    text-align: left;
+    font-family: space-mono;
+    font-weight: 400;
+}
+
+main .info .titulo{
+    padding: 90px 90px 60px 90px;
+    max-width: 600px;
+}
+
+main .info h2{
+    font-size: 54px;
+    letter-spacing: -3.5%;
+    line-height: 95px;
+    color: #333333;
+    font-weight: bold;
+}
+
+main .info .paragrafo{
+    padding: 0 90px 40px 90px;
+}
+
+main .info p{
+    font-size: 24px;
+    color: #333333;
+}
+
+main .btn{
+    padding: 0 90px;
+} 
+
+main .btn input[type="button"]{
+    font-size: 14px;
+    padding: 18px 43px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #333333;
+    border: 0;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    font-family: montserrat;
+    padding: 14px;
+    color: #BDBDBD;
+}
+
+footer p{
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+/* ----- // RESPONSIVE // ----- */
+
+@media screen and (max-width: 768px){
+    header{
+        text-align: center;
+    }
+    main{
+        flex-direction: column;
+    }
+    main .folder, main .info{
+        width: 100%;
+    }
+
+    main .info .titulo, main .info .paragrafo{
+        padding: 90px 2% 60px 2%;
+        max-width: 600px;
+    }
+    main .btn{
+        padding: 5px 2% 25px 2%;
+    } 
+}
+
+@media screen and (max-width: 425px){
+    main .folder{
+        height: 300px;
+    }
+}
