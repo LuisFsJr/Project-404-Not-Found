@@ -112,6 +112,7 @@ footer p{
     }
     main .folder, main .info{
         width: 100%;
+        padding-top: 20px;
     }
 
     main .info .titulo, main .info .paragrafo{
